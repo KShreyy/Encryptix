@@ -1,50 +1,36 @@
-# Movie Recommendation🍿 System
+# Spam-Classifier
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+<p align="center">
+  <a href="https://github.com/ksdkamesh99/Spam-Classifier">
+    <img src="images/front.jfif" alt="Logo">
+  </a>
+</p>
 
-## [Watch Tutorial for this project](https://youtu.be/fPVXDur94dY)
-<img src="https://github.com/Spidy20/Movie_Recommender_App/blob/master/yt_thumb.jpg">
+## 📌 Introduction:-
 
-## Source
-- [IMDB Movie 5000 Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset)
-- Inspired from this [original repository](https://github.com/ppai22/knn_movie_recommender).
+A Natural Language Processing with SMS Data to predict whether the SMS is Spam/Ham with various ML Algorithms like multinomial-naive-bayes,logistic regression,svm,decision trees to compare accuracy and using various data cleaning and processing techniques like PorterStemmer,CountVectorizer,TFIDF Vetorizer,WordnetLemmatizer.
+It is implemented using LSTM and Word Embeddings to gain accuracy of 97.84%.
 
-## Features
-- Simple responsive UI
-- Movie Story
-- Movie Posters
-- Directors & Cast information
-- Total ratings
-- IMDB Ratings⭐
-
-## Usage
-
-- Clone my repository.
-- Open CMD in working directory.
-- Run following command.
-  ```
-  pip install -r requirements.txt
-  ```
-- `App.py` is the main Python file of Streamlit Web-Application. 
-- To run app, write following command in CMD. or use any IDE.
-  ```
-  streamlit run App.py
-  ```
-- `Movie_Data_Processing.ipynb` is the notebook of data processing.
-- `Classifier.py` is the main file which is containing a KNN Algorithm.
-- For more explanation of this project see the tutorial on Machine Learning Hub YouTube channel.
-
-## Screenshots
-
-### Movie based Recommendation
-<img src="https://github.com/Spidy20/Movie_Recommender_App/blob/master/t1.png">
-
-### Genre based Recommendation
-<img src="https://github.com/Spidy20/Movie_Recommender_App/blob/master/t2.png">
+## ✔❌Accuracy ❌✔:-
+| Text Preprocessing Type              | Logistic Regression | Multinomial NB | Support Vector Machine  | Decision Tree |
+|--------------------------------------|---------------------|----------------|-------------------------|---------------|
+| TFIDF Vectorizer + PorterStemmer     | 96.68%              | 97.30%         | 98.47%                  | 96.68%        |
+| CountVectorizer + PorterStemmer      | 98.65%              | 98.56%         | 98.74%                  | 97.84%        |
+| CountVectorizer + WordnetLemmatizer  | 98.56%              | 98.29%         | 98.38%                  | 97.75%        |
+| TFIDF Vectorizer + WordnetLemmatizer | 96.41%              | 97.48%         | 98.47%                  | 96.86%        |
 
 
-## Just follow☝️ me and Star⭐ my repository 
+## WorkFlow:-
+![Workflow of SMS spam Classifer](workflow.gif)
 
-# [Buy me a Coffee☕](https://www.buymeacoffee.com/spidy20)
-## [Donate me on PayPal(It will inspire me to do more projects)](https://www.paypal.me/spidy1820)
+## 🏁 Datasets Used:-
+* The dataset used is SMS Spam Dataset created by UCI Machine Learning.This dataset is downloaded in kaggle.You can download it [here](https://www.kaggle.com/uciml/sms-spam-collection-dataset/download).
+* Reference for this dataset can be found [here](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/)
+## 📧Contact:-
+For any kind of suggesstions/ help in models code Please mail me at ksdkamesh99@gmail.com.
+
+## 📜 LICENSE
+[MIT](https://github.com/ksdkamesh99/Spam-Classifier/blob/master/LICENSE)
